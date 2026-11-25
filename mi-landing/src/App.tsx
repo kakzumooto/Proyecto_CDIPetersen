@@ -9,15 +9,15 @@ interface GalleryImage {
 
 // ── Data ──────────────────────────────────────────
 const galleryImages: GalleryImage[] = [
-  { id: "1", src: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=600&h=400&fit=crop&auto=format", alt: "Niños jugando en el patio" },
-  { id: "2", src: "https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?w=400&h=560&fit=crop&auto=format", alt: "Niña corriendo y riendo" },
-  { id: "3", src: "https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=500&h=340&fit=crop&auto=format", alt: "Niños tomados de la mano" },
-  { id: "4", src: "https://images.unsplash.com/photo-1567746455504-cb3213f8f5b8?w=500&h=340&fit=crop&auto=format", alt: "Salón de clases colorido" },
-  { id: "5", src: "https://images.unsplash.com/photo-1786667395513-1d0804488602?w=600&h=380&fit=crop&auto=format", alt: "Aulas modernas y coloridas" },
-  { id: "6", src: "https://images.unsplash.com/photo-1583661664284-d1a5ed6ddde9?w=400&h=300&fit=crop&auto=format", alt: "Amigos en el recreo" },
-  { id: "7", src: "https://images.unsplash.com/photo-1664990594725-552201db8079?w=400&h=520&fit=crop&auto=format", alt: "Grupo de niños felices" },
-  { id: "8", src: "https://images.unsplash.com/photo-1533222535026-754c501569dd?w=500&h=340&fit=crop&auto=format", alt: "Niños jugando en el jardín" },
-  { id: "9", src: "https://images.unsplash.com/photo-1786667395451-3f0cbf620a90?w=500&h=500&fit=crop&auto=format", alt: "Aula amarilla con materiales" },
+  { id: "1", src: "/img/actividadPatio.jpeg", alt: "Niños jugando en el patio" },
+  { id: "2", src: "/img/patio.jpeg", alt: "Niña corriendo y riendo" },
+  { id: "3", src: "/img/cumpleaños.jpeg", alt: "Niños tomados de la mano" },
+  { id: "4", src: "/img/presentacion.jpeg", alt: "Salón de clases colorido" },
+  { id: "5", src: "/img/recreo.jpeg", alt: "Aulas modernas y coloridas" },
+  { id: "6", src: "/img/firmaPapas.jpeg", alt: "Amigos en el recreo" },
+  { id: "7", src: "/img/salonDeClases.jpeg", alt: "Grupo de niños felices" },
+  { id: "8", src: "/img/actividad1.jpeg", alt: "Niños jugando en el jardín" },
+  { id: "9", src: "/img/actividad2.jpeg", alt: "Aula amarilla con materiales" },
 ];
 
 const facilities = [
@@ -27,7 +27,7 @@ const facilities = [
     desc: "Espacios amplios, coloridos y estimulantes diseñados para el aprendizaje activo y la creatividad.",
     color: "bg-blue-50 border-blue-100",
     accent: "text-blue-700",
-    img: "https://images.unsplash.com/photo-1786667395513-1d0804488602?w=420&h=230&fit=crop&auto=format",
+    img: "/img/salonDeClases.jpeg",
   },
   {
     icon: "🌳",
@@ -35,7 +35,7 @@ const facilities = [
     desc: "Área exterior segura y equipada con juegos, zona de arena y jardín para explorar la naturaleza.",
     color: "bg-green-50 border-green-100",
     accent: "text-green-700",
-    img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=420&h=230&fit=crop&auto=format",
+    img: "/img/PatioDeJuegos2.jpeg",
   },
   {
     icon: "🍽️",
@@ -43,7 +43,7 @@ const facilities = [
     desc: "Menú balanceado y variado preparado con ingredientes frescos para el sano desarrollo de los niños.",
     color: "bg-yellow-50 border-yellow-100",
     accent: "text-yellow-700",
-    img: "https://images.unsplash.com/photo-1567746455504-cb3213f8f5b8?w=420&h=230&fit=crop&auto=format",
+    img: "/img/Comedor.jpeg",
   },
   {
     icon: "🎨",
@@ -51,7 +51,7 @@ const facilities = [
     desc: "Espacio creativo equipado con materiales para que los niños expresen su imaginación sin límites.",
     color: "bg-red-50 border-red-100",
     accent: "text-red-700",
-    img: "https://images.unsplash.com/photo-1786667395451-3f0cbf620a90?w=420&h=230&fit=crop&auto=format",
+    img: "/img/tallerDidactico.jpeg",
   },
 ];
 
@@ -72,7 +72,7 @@ const values = [
 ];
 
 const pastEvents = [
-  { title: "Festival de Primavera 2024", date: "Abril 2024", img: "https://images.unsplash.com/photo-1502086223501-7ea6ecd79368?w=420&h=236&fit=crop&auto=format" },
+  { title: "Festival de Primavera 2024", date: "Abril 2024", img: "/img/actividad1.mp4" },
   { title: "Ceremonia de Graduación 2024", date: "Julio 2024", img: "https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=420&h=236&fit=crop&auto=format" },
   { title: "Halloween & Día de Muertos 2024", date: "Octubre 2024", img: "https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?w=420&h=236&fit=crop&auto=format" },
 ];
@@ -280,7 +280,7 @@ function Hero() {
               style={{ borderRadius: "60% 40% 55% 45% / 50% 60% 40% 50%" }}
             >
               <img
-                src="https://images.unsplash.com/photo-1627764940620-90393d0e8c34?w=640&h=640&fit=crop&auto=format"
+                src="/img/puertaPetersen.jpeg"
                 alt="Niños felices en CDI Petersen"
                 className="w-full h-full object-cover"
               />
@@ -348,22 +348,22 @@ function QuienesSomos() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-3">
               <img
-                src="https://images.unsplash.com/photo-1533222481259-ce20eda1e20b?w=320&h=360&fit=crop&auto=format"
+                src="/img/presentacion.jpeg"
                 alt="Niña feliz"
                 className="rounded-3xl shadow-md w-full h-52 object-cover"
               />
               <img
-                src="https://images.unsplash.com/photo-1664990594725-552201db8079?w=320&h=280&fit=crop&auto=format"
+                src="/img/miss1.jpeg"
                 alt="Niños estudiando"
                 className="rounded-3xl shadow-md w-full h-52 object-cover mt-8"
               />
               <img
-                src="https://images.unsplash.com/photo-1583661664284-d1a5ed6ddde9?w=320&h=280&fit=crop&auto=format"
+                src="/img/miss2.jpeg"
                 alt="Amigos en recreo"
                 className="rounded-3xl shadow-md w-full h-52 object-cover -mt-6"
               />
               <img
-                src="https://images.unsplash.com/photo-1533222535026-754c501569dd?w=320&h=360&fit=crop&auto=format"
+                src="/img/activacion.jpeg"
                 alt="Niños jugando"
                 className="rounded-3xl shadow-md w-full h-52 object-cover"
               />
@@ -651,7 +651,7 @@ function Contactanos() {
       ),
       label: "Facebook",
       handle: "CDI Petersen Oficial",
-      href: "https://facebook.com",
+      href: "https://www.facebook.com/cdipetersen?locale=es_LA",
       bg: "bg-blue-600 hover:bg-blue-700",
     },
     {
@@ -892,7 +892,7 @@ function Footer() {
 function WhatsAppFAB() {
   return (
     <a
-      href="https://wa.me/5512345678?text=Hola%2C%20me%20interesa%20inscribir%20a%20mi%20hijo%20en%20el%20CDI%20Petersen"
+      href="https://wa.me/5591931185?text=Hola%2C%20me%20interesa%20inscribir%20a%20mi%20hijo%20en%20el%20CDI%20Petersen"
       target="_blank"
       rel="noopener noreferrer"
       className="fixed bottom-6 right-6 z-40 group"
