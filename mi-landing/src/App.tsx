@@ -10,14 +10,19 @@ interface GalleryImage {
 // ── Data ──────────────────────────────────────────
 const galleryImages: GalleryImage[] = [
   { id: "1", src: "/img/actividadPatio.jpeg", alt: "Niños jugando en el patio" },
-  { id: "2", src: "/img/patio.jpeg", alt: "Niña corriendo y riendo" },
-  { id: "3", src: "/img/cumpleaños.jpeg", alt: "Niños tomados de la mano" },
-  { id: "4", src: "/img/presentacion.jpeg", alt: "Salón de clases colorido" },
+  { id: "2", src: "/img/cumpleaños.jpeg", alt: "Niña corriendo y riendo" },
+  { id: "3", src: "/img/patioBonito.jpeg", alt: "Niños tomados de la mano" },
+  { id: "4", src: "/img/diaDeMuertos.jpeg", alt: "Salón de clases colorido" },
   { id: "5", src: "/img/recreo.jpeg", alt: "Aulas modernas y coloridas" },
-  { id: "6", src: "/img/firmaPapas.jpeg", alt: "Amigos en el recreo" },
+  { id: "6", src: "/img/robotica.jpeg", alt: "Amigos en el recreo" },
   { id: "7", src: "/img/salonDeClases.jpeg", alt: "Grupo de niños felices" },
-  { id: "8", src: "/img/actividad1.jpeg", alt: "Niños jugando en el jardín" },
+  { id: "8", src: "/img/patioJuegos.jpeg", alt: "Niños jugando en el jardín" },
   { id: "9", src: "/img/actividad2.jpeg", alt: "Aula amarilla con materiales" },
+  { id: "10", src: "/img/civico.jpeg", alt: "Aula amarilla con materiales" },
+  { id: "11", src: "/img/taekwondo.jpeg", alt: "Aula amarilla con materiales" },
+  { id: "11", src: "/img/maestras.jpeg", alt: "Aula amarilla con materiales" },
+  { id: "11", src: "/img/mamasBaile.jpeg", alt: "Aula amarilla con materiales" },
+
 ];
 
 const facilities = [
@@ -37,21 +42,29 @@ const facilities = [
     accent: "text-green-700",
     img: "/img/PatioDeJuegos2.jpeg",
   },
-  {
-    icon: "🍽️",
-    title: "Comedor Nutritivo",
-    desc: "Menú balanceado y variado preparado con ingredientes frescos para el sano desarrollo de los niños.",
+ {
+    icon: "🤖",
+    title: "Taller de Robótica",
+    desc: "Despertamos su curiosidad y pensamiento lógico mediante juegos de construcción y tecnología divertida adaptada a su edad.",
     color: "bg-yellow-50 border-yellow-100",
     accent: "text-yellow-700",
-    img: "/img/Comedor.jpeg",
+    img: "/img/robotica2.jpeg",
   },
   {
-    icon: "🎨",
-    title: "Taller de Arte",
-    desc: "Espacio creativo equipado con materiales para que los niños expresen su imaginación sin límites.",
+    icon: "🩰",
+    title: "Taller de Ballet",
+    desc: "Fomentamos la expresión corporal, el ritmo, la postura y la sensibilidad artística a través de la danza en un ambiente alegre.",
+    color: "bg-pink-50 border-pink-100",
+    accent: "text-pink-700",
+    img: "/img/baletPatio.jpeg",
+  },
+  {
+    icon: "🥋",
+    title: "Taller de Taekwondo",
+    desc: "Desarrollan disciplina, coordinación, equilibrio y confianza en sí mismos mediante actividades físicas seguras y formativas.",
     color: "bg-red-50 border-red-100",
     accent: "text-red-700",
-    img: "/img/tallerDidactico.jpeg",
+    img: "/img/taekwondo.jpeg",
   },
 ];
 
@@ -223,7 +236,7 @@ function Hero() {
         {/* Left: text */}
         <div>
           <div className="inline-flex items-center gap-2 bg-blue-100 text-blue-700 font-nunito font-semibold text-sm px-4 py-2 rounded-full mb-7 shadow-sm">
-            <span>⭐</span> +15 años formando futuros líderes
+            <span>⭐</span> +25 años formando futuros líderes
           </div>
           <h1 className="font-poppins font-extrabold text-5xl sm:text-6xl lg:text-[68px] leading-[1.1] text-gray-900 mb-7">
             El mejor{" "}
@@ -260,8 +273,8 @@ function Hero() {
           <div className="flex flex-wrap gap-10 mt-12 pt-10 border-t border-gray-200">
             {[
               { num: "500+", label: "Alumnos graduados", color: "text-blue-700" },
-              { num: "15+", label: "Años de experiencia", color: "text-yellow-500" },
-              { num: "20+", label: "Maestros certificados", color: "text-green-600" },
+              { num: "25+", label: "Años de experiencia", color: "text-yellow-500" },
+              { num: "Inglés", label: "Todos los grados incluyen Inglés", color: "text-green-600" },
             ].map((s) => (
               <div key={s.label}>
                 <div className={`font-poppins font-extrabold text-3xl ${s.color}`}>{s.num}</div>
@@ -280,7 +293,7 @@ function Hero() {
               style={{ borderRadius: "60% 40% 55% 45% / 50% 60% 40% 50%" }}
             >
               <img
-                src="/img/puertaPetersen.jpeg"
+                src="/img/moka.jpeg"
                 alt="Niños felices en CDI Petersen"
                 className="w-full h-full object-cover"
               />
@@ -337,7 +350,7 @@ function QuienesSomos() {
             ¿Quiénes Somos? 👨‍👩‍👧‍👦
           </h2>
           <p className="font-nunito text-xl text-gray-600 max-w-2xl mx-auto">
-            Somos una institución educativa con más de 15 años dedicados a la formación integral
+            Somos una institución educativa con más de 25 años dedicados a la formación integral
             de los niños en sus primeros años de vida.
           </p>
         </div>
@@ -363,14 +376,14 @@ function QuienesSomos() {
                 className="rounded-3xl shadow-md w-full h-52 object-cover -mt-6"
               />
               <img
-                src="/img/activacion.jpeg"
+                src="/img/profeJuan.jpeg"
                 alt="Niños jugando"
                 className="rounded-3xl shadow-md w-full h-52 object-cover"
               />
             </div>
             {/* Center badge */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 bg-blue-700 rounded-2xl p-5 shadow-2xl text-center pointer-events-none">
-              <div className="font-poppins font-extrabold text-4xl text-white leading-none">15+</div>
+              <div className="font-poppins font-extrabold text-4xl text-white leading-none">25+</div>
               <div className="font-nunito text-blue-100 text-xs mt-1 leading-snug">Años de amor<br />y dedicación</div>
             </div>
           </div>
@@ -786,12 +799,32 @@ function Contactanos() {
 
             <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 border border-white/20 mt-2">
               <h4 className="font-poppins font-bold text-white text-lg mb-5">📍 Encuéntranos</h4>
-              <ul className="space-y-3 font-nunito text-blue-100 text-sm">
-                <li className="flex items-start gap-2"><span>📌</span><span>Av. Petersen #123, Col. Centro, Ecatepec, Estado de México</span></li>
-                <li className="flex items-center gap-2"><span>📞</span><span>(55) 1234-5678</span></li>
-                <li className="flex items-center gap-2"><span>🕒</span><span>Lunes a Viernes: 7:00 am – 6:00 pm</span></li>
-                <li className="flex items-center gap-2"><span>📅</span><span>Sábados: 8:00 am – 2:00 pm (solo consultas)</span></li>
-              </ul>
+          <ul className="space-y-3 font-nunito text-blue-100 text-sm">
+  <li className="flex items-start gap-2">
+    <span>📌</span>
+    <a
+      href="https://www.google.com/maps/search/?api=1&query=Calle+Mina+Lopez+14,+Capula,+54608+Tepotzotlán,+Méx.,+México"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="hover:text-white underline decoration-blue-300/60 hover:decoration-white transition-colors"
+    >
+      Calle Mina López 14, Capula, 54608 Tepotzotlán, Méx., México
+    </a>
+  </li>
+  <li className="flex items-center gap-2">
+    <span>📞</span>
+    <a
+      href="tel:+525558765545"
+      className="hover:text-white transition-colors"
+    >
+      55 5876 5545
+    </a>
+  </li>
+  <li className="flex items-center gap-2">
+    <span>🕒</span>
+    <span>Lunes a Viernes: 8:30 am – 3:00 pm (15:00 hrs)</span>
+  </li>
+</ul>
             </div>
           </div>
         </div>
@@ -838,9 +871,9 @@ function Footer() {
           <div>
             <h5 className="font-poppins font-bold text-white text-base mb-5">Contacto</h5>
             <ul className="space-y-3 font-nunito text-gray-400 text-sm">
-              <li>📞 (55) 1234-5678</li>
+              <li>📞 (55) 58765545</li>
               <li>📧 contacto@cdipetersen.mx</li>
-              <li>📌 Av. Petersen #123, Ecatepec</li>
+              <li>📌 calle Mina López 14, Capula, 54608 Tepotzotlán, Méx., México</li>
               <li>🌐 Estado de México, México</li>
             </ul>
           </div>
@@ -851,12 +884,9 @@ function Footer() {
             <ul className="space-y-2.5 font-nunito text-gray-400 text-sm">
               <li className="flex justify-between gap-4">
                 <span>Lun – Vie</span>
-                <span className="text-white font-semibold">7:00 – 18:00</span>
+                <span className="text-white font-semibold">8:30 – 15:00</span>
               </li>
-              <li className="flex justify-between gap-4">
-                <span>Sábados</span>
-                <span className="text-white font-semibold">8:00 – 14:00</span>
-              </li>
+             
               <li className="flex justify-between gap-4">
                 <span>Domingos</span>
                 <span className="text-gray-600">Cerrado</span>
