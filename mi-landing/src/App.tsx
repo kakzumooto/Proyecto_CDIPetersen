@@ -361,7 +361,7 @@ function QuienesSomos() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-3">
               <img
-                src="/img/presentacion.jpeg"
+                src="/img/actividad3.jpeg"
                 alt="Niña feliz"
                 className="rounded-3xl shadow-md w-full h-52 object-cover"
               />
